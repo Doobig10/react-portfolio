@@ -5,7 +5,7 @@ export default function HeaderComponent() {
             <div className={"grid grid-cols-1 lg:grid-cols-12"}>
                 <div className={"col-span-7 place-self-center text-center sm:text-left"}>
                     <h1 className={"text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold"}>
-                        Hello, I'm Aidan
+                        Hello, I\'m Aidan
                     </h1>
                     <p className={"text-[#86959e] text-lg lg:text-xl mb-6"}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit
