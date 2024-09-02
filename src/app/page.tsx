@@ -1,5 +1,5 @@
-import ToolbarComponent from "@/app/components/ToolbarComponent";
-import HeaderComponent from "@/app/components/HeaderComponent";
+import ToolbarComponent from "@/app/components/toolbar/ToolbarComponent";
+import HeaderComponent from "@/app/components/header/HeaderComponent";
 
 
 export default function Home() {

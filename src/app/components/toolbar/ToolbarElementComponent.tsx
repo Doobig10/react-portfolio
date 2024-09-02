@@ -20,5 +20,5 @@ export default function ToolbarElementComponent(
         >
             {props.text}
         </Link>
-    )
+    );
 }
