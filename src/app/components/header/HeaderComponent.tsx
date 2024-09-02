@@ -6,7 +6,7 @@ export default function HeaderComponent() {
     return (
         <section>
             <div className={"grid grid-cols-1 lg:grid-cols-25"}>
-                <div className={"col-span-20 place-self-center text-center sm:text-left"}>
+                <div className={"col-span-20 place-self-left text-center sm:text-left"}>
                     <h1 className={"text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold"}>
                         <span className={"text-transparent bg-clip-text bg-gradient-to-b from-[#0FA3B1] to-[#C2E812]"}>
                             Looking For
@@ -43,7 +43,7 @@ export default function HeaderComponent() {
                         </button>
                     </div>
                 </div>
-                <div className={"col-span-5 place-self-center mt-4 lg:mt-0"}>
+                <div className={"col-span-5 place-self-right mt-4 lg:mt-0"}>
                     <div className={"rounded-sm bg-blue-800"}>
                     </div>
                 </div>

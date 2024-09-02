@@ -15,7 +15,7 @@ export default function ToolbarComponent() {
         <nav className={"fixed top-0 left-0 right-0 z-10 bg-[#1c1c1c] bg-opacity-95"}>
             <div className={"flex flex-wrap items-center justify-between mx-auto p-8"}>
                 <Link href={"/"} className={"text-2xl md:text-5xl text-white font-semibold"}>
-                    MyLogo
+                    AJB
                 </Link>
                 <div className={"mobile-menu sm:hidden block w-auto"} id={"navbar"}>
                     {
