@@ -1,8 +1,9 @@
 import Link from "next/link";
+import {PropsWithChildren} from "react";
 
 interface Props {
     href: string,
-    text: string,
+    text?: string,
     className?: string,
 }
 
@@ -11,14 +12,14 @@ const fallback = {
 }
 
 export default function ToolbarElementComponent(
-    props: Props
+    props: PropsWithChildren<Props>
 ) {
     return (
         <Link
             href={props.href}
             className={props.className || fallback.className}
         >
-            {props.text}
+            {props.children || props.text}
         </Link>
     );
 }

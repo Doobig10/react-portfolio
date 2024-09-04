@@ -12,32 +12,67 @@ export default function ToolbarComponent() {
     const [toolbarOpen, setToolbarOpen] = useState<boolean>(false);
 
     return (
-        <nav className={"fixed top-0 left-0 right-0 z-10 bg-[#1c1c1c] bg-opacity-95"}>
-            <div className={"flex flex-wrap items-center justify-between mx-auto p-8"}>
-                <Link href={"/"} className={"text-2xl md:text-5xl text-white font-semibold"}>
+        <nav className={`
+        fixed top-0 left-0 right-0 z-10 
+        bg-eerie bg-opacity-95
+        `}>
+            <div className={`
+            flex flex-wrap 
+            items-center justify-between 
+            mx-auto p-8
+            `}>
+                <Link href={"/"} className={`
+                text-2xl md:text-5xl 
+                text-white 
+                font-semibold
+                `}>
                     AJB
                 </Link>
-                <div className={"mobile-menu sm:hidden block w-auto"} id={"navbar"}>
+                <div  id={"navbar"} className={`
+                mobile-menu block 
+                sm:hidden w-auto
+                `}>
                     {
                         !toolbarOpen ? (
                             <button
                                 onClick={() => setToolbarOpen(true)}
-                                className={"flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"}
+                                className={`
+                                flex items-center 
+                                px-3 py-2 
+                                rounded
+                                border border-slate-200 
+                                text-slate-200 
+                                hover:text-white hover:border-white
+                                `}
                             >
-                                <Bars3Icon className={"h-5 w-5"}/>
+                                <Bars3Icon className={`h-5 w-5`}/>
                             </button>
                         ) : (
                             <button
                                 onClick={() => setToolbarOpen(false)}
-                                className={"flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"}
+                                className={`
+                                flex items-center 
+                                px-3 py-2
+                                rounded 
+                                border border-slate-200 
+                                text-slate-200 
+                                hover:text-white hover:border-white
+                                `}
                             >
-                                <XMarkIcon className={"h-5 w-5"}/>
+                                <XMarkIcon className={`h-5 w-5`}/>
                             </button>
                         )
                     }
                 </div>
-                <div className={"menu hidden sm:block sm:w-auto"} id={"navbar"}>
-                    <ul className={"flex p-0 md:flex-row md:space-x-8"}>
+                <div id={"navbar"} className={`
+                menu hidden 
+                sm:block sm:w-auto
+                `}>
+                    <ul className={`
+                    flex 
+                    p-0 
+                    md:flex-row md:space-x-8
+                    `}>
                         {
                             toolbarElements.map((toolbarElement, index) => (
                                 <li key={index}>

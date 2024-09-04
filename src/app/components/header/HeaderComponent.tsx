@@ -5,10 +5,26 @@ import { TypeAnimation } from 'react-type-animation';
 export default function HeaderComponent() {
     return (
         <section>
-            <div className={"grid grid-cols-1 lg:grid-cols-25"}>
-                <div className={"col-span-20 place-self-left text-center sm:text-left"}>
-                    <h1 className={"text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold"}>
-                        <span className={"text-transparent bg-clip-text bg-gradient-to-b from-[#0FA3B1] to-[#C2E812]"}>
+            <div className={`
+            grid 
+            grid-cols-1 lg:grid-cols-25
+            `}>
+                <div className={`
+                col-span-20 
+                place-self-left
+                text-center sm:text-left
+                `}>
+                    <h1 className={`
+                    text-white
+                    mb-4
+                    text-4xl sm:text-5xl lg:text-6xl 
+                    font-extrabold
+                    `}>
+                        <span className={`
+                        text-transparent 
+                        bg-clip-text 
+                        bg-gradient-to-b from-moonstone to-pear
+                        `}>
                             Looking For
                         </span>
                         <br/>
@@ -28,16 +44,16 @@ export default function HeaderComponent() {
                             repeat={Infinity}
                         />
                     </h1>
-                    <p className={"text-[#86959e] text-lg lg:text-xl mb-6"}>
+                    <p className={"text-supreme text-lg lg:text-xl mb-6"}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit
                     </p>
                     <div>
                         <button
-                            className={"px-6 py-3 w-full sm:w-fit bg-gradient-to-br from-[#0FA3B1] to-[#C2E812] rounded-full mr-4 hover:bg-fixed hover:bg-[#0FA3B1] text-black"}>My
+                            className={"w-full sm:w-fit bg-gradient-to-br from-moonstone to-pear rounded-full mr-4 px-6 py-3 hover:bg-fixed hover:bg-moonstone text-black"}>My
                             Projects
                         </button>
-                        <button className={"px-1 py-1 w-full sm:w-fit bg-gradient-to-br from-[#0FA3B1] to-[#C2E812] rounded-full mr-4 bg-transparent mt-3"}>
-                            <span className={"block bg-[#1c1c1c] rounded-full px-5 py-2 hover:bg-slate-800 text-white"}>
+                        <button className={"w-full sm:w-fit bg-gradient-to-br from-moonstone to-pear rounded-full mr-4 button-hollow px-1 py-1 bg-transparent mt-3"}>
+                            <span className={"block bg-eerie rounded-full px-5 py-2 hover:bg-slate-800 text-white"}>
                                 Download CV
                             </span>
                         </button>
