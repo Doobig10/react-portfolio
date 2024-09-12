@@ -1,7 +1,4 @@
-
-
-
-export const toolbarElements = [
+export const toolbarData = [
     {
         text: "About",
         path: "#about",

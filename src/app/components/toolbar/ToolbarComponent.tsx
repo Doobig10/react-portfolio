@@ -6,7 +6,7 @@ import {Bars3Icon, XMarkIcon} from "@heroicons/react/24/solid";
 
 import ToolbarOverlayComponent from "@/app/components/toolbar/ToolbarOverlayComponent";
 import ToolbarElementComponent from "@/app/components/toolbar/ToolbarElementComponent";
-import {toolbarElements} from "@/app/components/toolbar/ToolbarElements"
+import {toolbarData} from "@/app/components/toolbar/ToolbarData"
 
 export default function ToolbarComponent() {
     const [toolbarOpen, setToolbarOpen] = useState<boolean>(false);
@@ -74,7 +74,7 @@ export default function ToolbarComponent() {
                     md:flex-row md:space-x-8
                     `}>
                         {
-                            toolbarElements.map((toolbarElement, index) => (
+                            toolbarData.map((toolbarElement, index) => (
                                 <li key={index}>
                                     <ToolbarElementComponent
                                         href={toolbarElement.path}

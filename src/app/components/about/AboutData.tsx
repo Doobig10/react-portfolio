@@ -13,7 +13,10 @@ export const aboutData: IAboutData[] = [
         title: "Skills",
         id: "skills",
         content: (
-            <div>
+            <div className={`
+                list-disc
+                pl-2
+            `}>
                 <ul>
                     <li> Skill 1 </li>
                     <li> Skill 2 </li>
