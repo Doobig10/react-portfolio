@@ -1,6 +1,7 @@
 import React from "react";
+import AboutSkillsComponent from "@/app/components/about/menu/AboutSkillsComponent";
 
-export type Windows = "skills" | "education" | "experience";
+export type Windows = "skills" | "education" | "experience" | "hobbies";
 
 export interface IAboutData {
     title: string;
@@ -13,14 +14,8 @@ export const aboutData: IAboutData[] = [
         title: "Skills",
         id: "skills",
         content: (
-            <div className={`
-                list-disc
-                pl-2
-            `}>
-                <ul>
-                    <li> Skill 1 </li>
-                    <li> Skill 2 </li>
-                </ul>
+            <div className={``}>
+                <AboutSkillsComponent />
             </div>
         )
     },
@@ -39,6 +34,15 @@ export const aboutData: IAboutData[] = [
         content: (
             <div>
                 <span> test2 </span>
+            </div>
+        )
+    },
+    {
+        title: "Hobbies",
+        id: "hobbies",
+        content: (
+            <div>
+                <span> test3 </span>
             </div>
         )
     }

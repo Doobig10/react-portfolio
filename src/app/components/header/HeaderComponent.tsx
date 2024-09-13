@@ -4,7 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 export default function HeaderComponent() {
     return (
-        <section>
+        <section id={'header'}>
             <div className={`
             grid 
             grid-cols-1 lg:grid-cols-25
@@ -45,7 +45,7 @@ export default function HeaderComponent() {
                         />
                     </h1>
                     <p className={"text-supreme text-lg lg:text-xl mb-6"}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        Read on to discover more about me and what I can do for you.
                     </p>
                     <div>
                         <button
