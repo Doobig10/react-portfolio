@@ -1,11 +1,11 @@
 "use client";
 
-import {aboutData, Windows} from "@/app/components/about/AboutData";
+import {data, Windows} from "@/app/components/about/Data";
 import React, {useState, useTransition} from "react";
-import AboutButtonMenuComponent from "@/app/components/about/menu/AboutButtonMenuComponent";
-import AboutDisplayComponent from "@/app/components/about/menu/AboutDisplayComponent";
+import ButtonMenuComponent from "@/app/components/about/menu/ButtonMenuComponent";
+import DisplayComponent from "@/app/components/about/menu/DisplayComponent";
 
-export default function AboutComponent() {
+export default function ContentComponent() {
 
     const [activeWindow, setActiveWindow] = useState<Windows>("skills");
     const [isPending, startTransition] = useTransition()
@@ -36,12 +36,12 @@ export default function AboutComponent() {
                 and in furthering my own skills and knowledge.
             </p>
 
-            <AboutButtonMenuComponent
+            <ButtonMenuComponent
                 active={activeWindow}
                 select={handleWindowChange}
             />
 
-            <AboutDisplayComponent
+            <DisplayComponent
                 active={activeWindow}
             />
         </div>

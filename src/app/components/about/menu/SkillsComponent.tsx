@@ -1,4 +1,4 @@
-export default function AboutSkillsComponent() {
+export default function SkillsComponent() {
 
     return (
         <div>

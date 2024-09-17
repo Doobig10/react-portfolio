@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import AboutComponent from "@/app/components/about/AboutComponent";
+import ContentComponent from "@/app/components/about/ContentComponent";
 
-export default function AboutContainerComponent() {
+export default function AboutContainer() {
     return (
         <section
             id={"about"}
@@ -25,7 +25,7 @@ export default function AboutContainerComponent() {
                     height={500}
                 />
 
-                <AboutComponent />
+                <ContentComponent />
 
             </div>
         </section>

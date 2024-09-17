@@ -1,6 +1,6 @@
 import ToolbarComponent from "@/app/components/toolbar/ToolbarComponent";
-import HeaderComponent from "@/app/components/header/HeaderComponent";
-import AboutContainerComponent from "@/app/components/about/AboutContainerComponent";
+import HeaderContainer from "@/app/components/header/Header Container";
+import AboutContainer from "@/app/components/about/AboutContainer";
 import ProjectsComponent from "@/app/components/projects/ProjectsComponent";
 
 
@@ -15,6 +15,7 @@ export default function Home() {
               mx-auto 
               px-12 py-4
               bg-eerie
+              text-white
               `}
           >
               <ToolbarComponent />
@@ -26,8 +27,8 @@ export default function Home() {
                   mt-24
                   `}
               >
-                  <HeaderComponent />
-                  <AboutContainerComponent />
+                  <HeaderContainer />
+                  <AboutContainer />
                   <ProjectsComponent />
               </div>
           </div>

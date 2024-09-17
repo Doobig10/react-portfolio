@@ -1,13 +1,13 @@
 import React, {PropsWithChildren} from 'react'
-import AboutButtonComponent from "@/app/components/about/menu/AboutButtonComponent";
-import {aboutData, Windows} from "@/app/components/about/AboutData";
+import ButtonComponent from "@/app/components/about/menu/ButtonComponent";
+import {data, Windows} from "@/app/components/about/Data";
 
 interface Props {
     select: (window: Windows) => void,
     active: Windows
 }
 
-export default function AboutButtonMenuComponent(
+export default function ButtonMenuComponent(
     props: PropsWithChildren<Props>
 ) {
     return (
@@ -15,18 +15,18 @@ export default function AboutButtonMenuComponent(
             className={`
             flex flex-row 
             justify-start 
-            mt-6
+            mt-8
             `}
         >
             {
-                aboutData.map((aboutTab, index) => (
-                    <li key={index}>
-                    <AboutButtonComponent
+                data.map((aboutTab, index) => (
+                    <li key={index} className={aboutTab.optional ? `hidden mg:block` : ``}>
+                    <ButtonComponent
                         select={() => props.select(aboutTab.id)}
                         active={props.active === aboutTab.id}
                     >
                         <span>{aboutTab.title}</span>
-                    </AboutButtonComponent>
+                    </ButtonComponent>
                     </li>
                 ))
             }

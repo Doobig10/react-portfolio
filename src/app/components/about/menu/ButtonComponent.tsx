@@ -5,7 +5,7 @@ interface Props {
     select: () => void;
 }
 
-export default function AboutButtonComponent (
+export default function ButtonComponent (
     props: PropsWithChildren<Props>
 ) {
     const classNameModifier = props.active ?
