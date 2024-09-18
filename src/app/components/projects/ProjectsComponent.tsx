@@ -35,8 +35,9 @@ export default function ProjectsComponent() {
                 text-supreme
                 `}
             >
-                {filters.map((filter) => (
+                {filters.map((filter, index) => (
                     <ProjectsTagButtonComponent
+                        key={index}
                         active={(activeTag == filter.filter)}
                         select={() => (setActiveTag(filter.filter))}
                         display={filter.display}
