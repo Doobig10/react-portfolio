@@ -16,6 +16,7 @@ export default function ButtonMenuComponent(
             flex flex-row 
             justify-start 
             mt-8
+            mb-4
             `}
         >
             {

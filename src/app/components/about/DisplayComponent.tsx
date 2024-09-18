@@ -20,7 +20,6 @@ export default function DisplayComponent(
             >
                 <div
                     className={`
-                    mt-4
                     h-64
                     w-full
                     sm:min-h-32 min-h-16
