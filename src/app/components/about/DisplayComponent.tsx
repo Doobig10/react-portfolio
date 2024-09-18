@@ -1,5 +1,5 @@
-import React, {PropsWithChildren, useState} from 'react'
-import {data, Windows} from "@/app/components/about/Data";
+import React, {PropsWithChildren} from 'react'
+import {aboutData, Windows} from "@/app/data/AboutData";
 
 interface Props {
     active: Windows,
@@ -9,8 +9,6 @@ interface Props {
 export default function DisplayComponent(
     props: PropsWithChildren<Props>
 ) {
-
-    const [isShowMore, setShowMore] = useState<boolean>(false);
 
     return (
         <div>
@@ -31,27 +29,12 @@ export default function DisplayComponent(
                     `}
                 >
                     {
-                        (data.find(
+                        (aboutData.find(
                             (entry) => (entry.id === props.active)
                         ) || {content: <p>failed to locate content</p>}).content
                     }
                 </div>
             </div>
-
-            {/*<button*/}
-            {/*    onClick={() => setShowMore(!isShowMore)}*/}
-            {/*    className={`*/}
-            {/*                    px-2 py-2 */}
-            {/*                    text-supreme*/}
-            {/*                    hover:text-white hover:border-white*/}
-            {/*                    `}*/}
-            {/*>*/}
-            {/*    {!isShowMore ?*/}
-            {/*        <span> + See More </span> :*/}
-            {/*        <span> - See Less </span>*/}
-            {/*    }*/}
-            {/*</button>*/}
-
         </div>
 
 )

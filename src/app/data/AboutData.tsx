@@ -13,7 +13,7 @@ export interface IAboutData {
     optional?: boolean;
 }
 
-export const data: IAboutData[] = [
+export const aboutData: IAboutData[] = [
     {
         title: "Skills",
         id: "skills",

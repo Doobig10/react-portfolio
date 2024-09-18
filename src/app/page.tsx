@@ -1,5 +1,5 @@
 import ToolbarComponent from "@/app/components/toolbar/ToolbarComponent";
-import HeaderContainer from "@/app/components/header/Header Container";
+import HeaderContainer from "@/app/components/header/HeaderContainer";
 import AboutContainer from "@/app/components/about/AboutContainer";
 import ProjectsComponent from "@/app/components/projects/ProjectsComponent";
 

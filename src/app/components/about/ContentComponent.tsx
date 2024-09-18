@@ -1,9 +1,9 @@
 "use client";
 
-import {data, Windows} from "@/app/components/about/Data";
+import {Windows} from "@/app/data/AboutData";
 import React, {useState, useTransition} from "react";
-import ButtonMenuComponent from "@/app/components/about/menu/ButtonMenuComponent";
-import DisplayComponent from "@/app/components/about/menu/DisplayComponent";
+import ButtonMenuComponent from "@/app/components/about/ButtonMenuComponent";
+import DisplayComponent from "@/app/components/about/DisplayComponent";
 
 export default function ContentComponent() {
 

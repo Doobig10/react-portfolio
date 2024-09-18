@@ -1,6 +1,6 @@
 import React, {PropsWithChildren} from 'react'
-import ButtonComponent from "@/app/components/about/menu/ButtonComponent";
-import {data, Windows} from "@/app/components/about/Data";
+import ButtonComponent from "@/app/components/about/ButtonComponent";
+import {aboutData, Windows} from "@/app/data/AboutData";
 
 interface Props {
     select: (window: Windows) => void,
@@ -19,8 +19,8 @@ export default function ButtonMenuComponent(
             `}
         >
             {
-                data.map((aboutTab, index) => (
-                    <li key={index} className={aboutTab.optional ? `hidden mg:block` : ``}>
+                aboutData.map((aboutTab, index) => (
+                    <li key={index} className={aboutTab.optional ? `hidden md:block` : ``}>
                     <ButtonComponent
                         select={() => props.select(aboutTab.id)}
                         active={props.active === aboutTab.id}

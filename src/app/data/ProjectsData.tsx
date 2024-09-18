@@ -1,17 +1,37 @@
 import "/public/images/next.svg"
 import "/public/images/scpsecretlab-banner.jpg"
 
-type Tags = "all" | "web" | "docker"
+export type Tag = "all" | "web" | "docker"
+
+interface IFiltersData {
+    filter: Tag
+    display: string
+}
 
 interface IProjectsData {
     id: number;
     title: string;
     description: string;
     background: string;
-    tags: Tags[];
+    tags: Tag[];
     github: string | undefined;
     preview: string | undefined;
 }
+
+export const filters: IFiltersData[] = [
+    {
+        filter: "all",
+        display: "All"
+    },
+    {
+        filter: "web",
+        display: "Web"
+    },
+    {
+        filter: "docker",
+        display: "Docker"
+    }
+]
 
 export const projectsData: IProjectsData[] = [
     {

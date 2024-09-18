@@ -1,8 +1,15 @@
+"use client";
+
 import ProjectsCardComponent from "@/app/components/projects/ProjectsCardComponent";
 
-import {projectsData} from "@/app/components/projects/ProjectsData";
+import {filters, projectsData, Tag} from "@/app/data/ProjectsData";
+import {useState} from "react";
+import ProjectsTagButtonComponent from "@/app/components/projects/ProjectsTagButtonComponent";
 
 export default function ProjectsComponent() {
+
+    const [activeTag, setActiveTag] = useState<Tag>("all");
+
     return (
         <section
             id={"projects"}
@@ -28,29 +35,14 @@ export default function ProjectsComponent() {
                 text-supreme
                 `}
             >
-                <button
-                    className={`
-                    rounded-full
-                    border-2 border-pear
-                    px-6 py-3
-                    text-xl
-                    cursor-pointer
-                    `}
-                >
-                    All
-                </button>
-                <button
-                    className={`
-                    rounded-full
-                    border-2 
-                    border-supreme hover:border-white
-                    px-6 py-3
-                    text-xl
-                    cursor-pointer
-                    `}
-                >
-                    Web
-                </button>
+                {filters.map((filter) => (
+                    <ProjectsTagButtonComponent
+                        active={(activeTag == filter.filter)}
+                        select={() => (setActiveTag(filter.filter))}
+                        display={filter.display}
+                    />
+                    ))
+                }
             </div>
             <div
                 className={`
@@ -60,16 +52,18 @@ export default function ProjectsComponent() {
                 `}
             >
                 {
-                    projectsData.map((project) => (
+                    projectsData.map((project) => {
+                        return (project.tags.includes(activeTag)) ? (
                         <ProjectsCardComponent
-                        key={project.id}
-                        title={project.title}
-                        description={project.description}
-                        background={project.background}
-                        github={project.github}
-                        preview={project.preview}
+                            key={project.id}
+                            title={project.title}
+                            description={project.description}
+                            background={project.background}
+                            github={project.github}
+                            preview={project.preview}
                         />
-                    ))
+                        ) : null}
+                    )
                 }
             </div>
         </section>

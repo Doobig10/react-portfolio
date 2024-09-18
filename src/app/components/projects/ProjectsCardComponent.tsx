@@ -15,12 +15,14 @@ export default function ProjectsCardComponent(
     props: PropsWithChildren<Props>
 ) {
     return (
-        <div>
+        <div
+            className={`group/card`}
+        >
             <div id={'project-image'}
                 className={`
                 h-52
                 rounded-t-xl
-                relative group
+                relative 
                 `}
                 style={{
                     background: `url(${props.background})`,
@@ -32,12 +34,13 @@ export default function ProjectsCardComponent(
                     className={`
                     absolute
                     top-0 left-0
-                    hidden group-hover:flex
+                    flex
                     items-center
                     justify-center
                     w-full h-full
                     bg-eerie
-                    bg-opacity-0 group-hover:bg-opacity-80
+                    bg-opacity-0 
+                    group-hover/card:bg-opacity-80
                     transition-all duration-500
                     `}
                 >
@@ -45,6 +48,8 @@ export default function ProjectsCardComponent(
                         <Link
                             href={props.github}
                             className={`
+                            opacity-0 group-hover/card:opacity-100
+                            transition-opacity duration-500
                             h-14 w-14
                             mr-2 md:mr-10
                             border-2
@@ -71,6 +76,8 @@ export default function ProjectsCardComponent(
                         <Link
                             href={props.preview}
                             className={`
+                            opacity-0 group-hover/card:opacity-100
+                            transition-opacity duration-500
                             h-14 w-14
                             border-2
                             relative
