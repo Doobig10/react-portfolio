@@ -13,6 +13,9 @@ export default function ProjectsComponent() {
     return (
         <section
             id={"projects"}
+            className={`
+            pb-5
+            `}
         >
             <h2
                 className={`
@@ -20,7 +23,7 @@ export default function ProjectsComponent() {
                 text-4xl
                 font-bold
                 text-white
-                mt-2 mb-8 md:mb-12
+                mt-2 mb-8 md:mb-2
                 `}
             >
                 My Projects

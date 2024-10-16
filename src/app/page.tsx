@@ -2,6 +2,7 @@ import ToolbarComponent from "@/app/components/toolbar/ToolbarComponent";
 import HeaderContainer from "@/app/components/header/HeaderContainer";
 import AboutContainer from "@/app/components/about/AboutContainer";
 import ProjectsComponent from "@/app/components/projects/ProjectsComponent";
+import ContactComponent from "@/app/components/contact/ContactComponent";
 
 
 export default function Home() {
@@ -30,6 +31,7 @@ export default function Home() {
                   <HeaderContainer />
                   <AboutContainer />
                   <ProjectsComponent />
+                  <ContactComponent />
               </div>
           </div>
       </main>
