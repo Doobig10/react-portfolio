@@ -3,6 +3,7 @@ export default function ContactComponent() {
         <section
             id={'contact'}
             className={`
+            md:my-20
             py-5
             border-t-2
             `}

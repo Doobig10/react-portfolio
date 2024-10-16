@@ -14,13 +14,13 @@ export default function DisplayComponent(
         <div>
             <div
                 className={`
-                h-64
+                md:h-96 h-64
                 overflow-y-hidden
                 `}
             >
                 <div
                     className={`
-                    h-64
+                    md:h-96 h-64
                     w-full
                     sm:min-h-32 min-h-16
                     overflow-y-scroll

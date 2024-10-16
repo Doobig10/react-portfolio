@@ -18,8 +18,8 @@ export default function AboutContainer() {
                 `}
             >
                 <Image
-                    className={`container hidden lg:block w-full h-full`}
-                    src={"/images/vercel.svg"}
+                    className={`container hidden lg:block rounded-3xl`}
+                    src={"/images/selfie.jpg"}
                     alt={"Placeholder Image"}
                     width={500}
                     height={500}

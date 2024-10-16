@@ -1,7 +1,7 @@
 export const toolbarData = [
     {
         text: "About",
-        path: "#aboutData",
+        path: "#about",
     },
     {
         text: "Projects",
