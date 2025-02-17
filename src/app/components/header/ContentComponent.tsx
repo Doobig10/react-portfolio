@@ -27,6 +27,8 @@ export default function ContentComponent() {
                 <br/>
                 <TypeAnimation
                     sequence={[
+                        'Hi',
+                        3000,
                         'A Capable Graduate?',
                         3000,
                         'A Software Engineer?',
@@ -37,7 +39,7 @@ export default function ContentComponent() {
                         8000,
                     ]}
                     wrapper="span"
-                    speed={1}
+                    speed={50}
                     repeat={Infinity}
                 />
             </h1>
