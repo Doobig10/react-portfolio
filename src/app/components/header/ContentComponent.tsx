@@ -37,7 +37,7 @@ export default function ContentComponent() {
                         8000,
                     ]}
                     wrapper="span"
-                    speed={50}
+                    speed={1}
                     repeat={Infinity}
                 />
             </h1>
